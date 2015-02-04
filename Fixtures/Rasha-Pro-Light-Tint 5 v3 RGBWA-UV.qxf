@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://qlcplus.sourceforge.net/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.8.3</Version>
+  <Author>Thierry Rodolfo</Author>
+ </Creator>
+ <Manufacturer>Rasha Pro Light</Manufacturer>
+ <Model>Tint 5 v3 RGBWA UV</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="15">None</Capability>
+  <Capability Min="16" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Macros">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="50">None</Capability>
+  <Capability Min="51" Max="100">Cut Color Change</Capability>
+  <Capability Min="101" Max="150">Mix Color Change</Capability>
+  <Capability Min="151" Max="255">Open White</Capability>
+ </Channel>
+ <Channel Name="Macros Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="White">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Amber">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Amber</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="UV">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Mode Name="Mode 10ch">
+  <Physical>
+   <Bulb Lumens="0" Type="LED" ColourTemperature="0"/>
+   <Dimensions Weight="1.2" Width="175" Height="100" Depth="175"/>
+   <Lens DegreesMin="35" DegreesMax="35" Name="Other"/>
+   <Focus PanMax="0" Type="Fixed" TiltMax="0"/>
+   <Technical DmxConnector="3-pin" PowerConsumption="60"/>
+  </Physical>
+  <Channel Number="0">Dimmer</Channel>
+  <Channel Number="1">Strobe</Channel>
+  <Channel Number="2">Macros</Channel>
+  <Channel Number="3">Macros Speed</Channel>
+  <Channel Number="4">Red</Channel>
+  <Channel Number="5">Green</Channel>
+  <Channel Number="6">Blue</Channel>
+  <Channel Number="7">White</Channel>
+  <Channel Number="8">Amber</Channel>
+  <Channel Number="9">UV</Channel>
+ </Mode>
+</FixtureDefinition>
