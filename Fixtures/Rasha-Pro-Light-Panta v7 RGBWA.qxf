@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://qlcplus.sourceforge.net/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.8.3</Version>
+  <Author>Thierry Rodolfo</Author>
+ </Creator>
+ <Manufacturer>Rasha Pro Light</Manufacturer>
+ <Model>Panta v7 RGBWA</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Amber">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Amber</Colour>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="White">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="15">None</Capability>
+  <Capability Min="16" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Color Change Time">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="15">Off</Capability>
+  <Capability Min="16" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Color Mix">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="127">Off</Capability>
+  <Capability Res="/Applications/QLC+.app/Contents/MacOS/../Resources/Gobos/Gobos\Others/rainbow.png" Min="128" Max="255">On Color Mix</Capability>
+ </Channel>
+ <Mode Name="Mode 9 chanels">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Width="0" Weight="1.8" Depth="0" Height="0"/>
+   <Lens Name="Other" DegreesMin="16" DegreesMax="16"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="120" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Red</Channel>
+  <Channel Number="1">Green</Channel>
+  <Channel Number="2">Blue</Channel>
+  <Channel Number="3">Amber</Channel>
+  <Channel Number="4">White</Channel>
+  <Channel Number="5">Dimmer</Channel>
+  <Channel Number="6">Strobe</Channel>
+  <Channel Number="7">Color Change Time</Channel>
+  <Channel Number="8">Color Mix</Channel>
+ </Mode>
+</FixtureDefinition>
