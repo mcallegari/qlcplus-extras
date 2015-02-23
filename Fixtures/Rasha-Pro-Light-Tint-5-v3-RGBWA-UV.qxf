@@ -3,7 +3,7 @@
 <FixtureDefinition xmlns="http://qlcplus.sourceforge.net/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.8.3</Version>
+  <Version>4.8.4</Version>
   <Author>Thierry Rodolfo</Author>
  </Creator>
  <Manufacturer>Rasha Pro Light</Manufacturer>
@@ -56,14 +56,15 @@
  </Channel>
  <Channel Name="UV">
   <Group Byte="0">Intensity</Group>
+  <Colour>UV</Colour>
   <Capability Min="0" Max="255">0&lt;Max</Capability>
  </Channel>
  <Mode Name="Mode 10ch">
   <Physical>
-   <Bulb Lumens="0" Type="LED" ColourTemperature="0"/>
-   <Dimensions Weight="1.2" Width="175" Height="100" Depth="175"/>
+   <Bulb Type="LED" ColourTemperature="0" Lumens="0"/>
+   <Dimensions Height="100" Weight="1.2" Width="175" Depth="175"/>
    <Lens DegreesMin="35" DegreesMax="35" Name="Other"/>
-   <Focus PanMax="0" Type="Fixed" TiltMax="0"/>
+   <Focus TiltMax="0" PanMax="0" Type="Fixed"/>
    <Technical DmxConnector="3-pin" PowerConsumption="60"/>
   </Physical>
   <Channel Number="0">Dimmer</Channel>
