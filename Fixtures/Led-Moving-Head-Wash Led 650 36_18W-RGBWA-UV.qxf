@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://qlcplus.sourceforge.net/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.8.5 GIT</Version>
+  <Author>Thierry Rodolfo</Author>
+ </Creator>
+ <Manufacturer>Led Moving Head</Manufacturer>
+ <Model>Wash Led 36*18W RGBWA UV</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Pan Fine">
+  <Group Byte="1">Pan</Group>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Tilt">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Tilt Fine">
+  <Group Byte="1">Tilt</Group>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Pan / Tilt Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Max &lt; 0</Capability>
+ </Channel>
+ <Channel Name="Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="255">Slow &lt; Fast</Capability>
+ </Channel>
+ <Channel Name="Red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="White">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Amber">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Amber</Colour>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="UV">
+  <Group Byte="0">Intensity</Group>
+  <Colour>UV</Colour>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Color Choice">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="1">Off</Capability>
+  <Capability Min="2" Max="19">Red -> Green</Capability>
+  <Capability Min="20" Max="39">Red -> Magenta</Capability>
+  <Capability Min="40" Max="59">Green -> Wellow</Capability>
+  <Capability Min="60" Max="79">Green -> Light Blue</Capability>
+  <Capability Min="80" Max="99">Blue -> Light Blue</Capability>
+  <Capability Min="100" Max="119">CTO Hot -> White</Capability>
+  <Capability Min="120" Max="139">CTO Cold -> White</Capability>
+  <Capability Min="140" Max="159">Amber -> CTO</Capability>
+  <Capability Min="160" Max="179">UV -> CTO</Capability>
+  <Capability Min="180" Max="199">Light Blue -> CTO</Capability>
+  <Capability Min="200" Max="219">White -> CTO</Capability>
+  <Capability Min="220" Max="255">Magenta -> CTO</Capability>
+ </Channel>
+ <Channel Name="Macro">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="59">Available</Capability>
+  <Capability Min="60" Max="64" Color="#aa0000">Red</Capability>
+  <Capability Min="65" Max="69" Color="#00aa00">Green</Capability>
+  <Capability Min="70" Max="74" Color="#0000ff">Blue</Capability>
+  <Capability Min="75" Max="79">White</Capability>
+  <Capability Min="80" Max="84" Color="#ffaa00">Amber</Capability>
+  <Capability Min="85" Max="89" Color="#000034">UV</Capability>
+  <Capability Min="90" Max="94" Color="#ffff00">Yellow</Capability>
+  <Capability Min="95" Max="99" Color="#55aaff">Light Blue</Capability>
+  <Capability Min="100" Max="104" Color="#55ffff">Light Blue 2</Capability>
+  <Capability Min="105" Max="109">White</Capability>
+  <Capability Min="110" Max="114" Color="#ffaaff">Light Magenta</Capability>
+  <Capability Min="115" Max="119" Color="#ffaaff">Light Magenta 2</Capability>
+  <Capability Min="120" Max="124">CTO Pink</Capability>
+  <Capability Min="125" Max="129" Color="#ffaa00">Amber</Capability>
+  <Capability Min="130" Max="134" Color="#ff007f">Magenta</Capability>
+  <Capability Min="135" Max="139" Color="#55ff7f">Light Green</Capability>
+  <Capability Min="140" Max="144">Green -> Wellow</Capability>
+  <Capability Min="145" Max="149">Green -> Blue</Capability>
+  <Capability Min="150" Max="154">Blue -> Pink</Capability>
+  <Capability Min="155" Max="159">Blue</Capability>
+  <Capability Min="160" Max="164">White</Capability>
+  <Capability Min="165" Max="169">Blue -> White</Capability>
+  <Capability Min="170" Max="174">Raimbow 1</Capability>
+  <Capability Min="175" Max="179">Raimbow 2</Capability>
+  <Capability Min="180" Max="184">Raimbow 3</Capability>
+  <Capability Min="185" Max="189">Raimbow 4</Capability>
+  <Capability Min="190" Max="194">Raimbow 5</Capability>
+  <Capability Min="195" Max="199">Raimbow 6</Capability>
+  <Capability Min="200" Max="204">Raimbow 7</Capability>
+  <Capability Min="205" Max="209">Raimbow 8</Capability>
+  <Capability Min="210" Max="214">Raimbow 9</Capability>
+  <Capability Min="215" Max="219">Raimbow 10</Capability>
+  <Capability Min="220" Max="224">Raimbow 11</Capability>
+  <Capability Min="225" Max="229">Raimbow 12</Capability>
+  <Capability Min="230" Max="234">Color Rotation CUT</Capability>
+  <Capability Min="235" Max="239">Color Rotation MIX</Capability>
+  <Capability Min="240" Max="244">Strobe</Capability>
+  <Capability Min="245" Max="249">Color Rotation CUT</Capability>
+  <Capability Min="250" Max="255">Color Rotation STROB</Capability>
+ </Channel>
+ <Channel Name="Macro Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Zoom">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255">0 &lt; Max</Capability>
+ </Channel>
+ <Channel Name="Pan / Tilt Parameter">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="64">No Function</Capability>
+  <Capability Min="65" Max="128">Pan Reverse </Capability>
+  <Capability Min="129" Max="192">Tilt Reverse</Capability>
+  <Capability Min="193" Max="255">Pan / Tilt Rotate</Capability>
+ </Channel>
+ <Channel Name="Sound / Auto / Reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="64">No Function</Capability>
+  <Capability Min="65" Max="128">Auto</Capability>
+  <Capability Min="129" Max="192">Sound On</Capability>
+  <Capability Min="193" Max="255">RESET</Capability>
+ </Channel>
+ <Mode Name="Standard">
+  <Physical>
+   <Bulb Lumens="0" Type="LED" ColourTemperature="0"/>
+   <Dimensions Width="425" Height="295" Weight="9" Depth="400"/>
+   <Lens DegreesMax="60" Name="Other" DegreesMin="15"/>
+   <Focus PanMax="540" Type="Head" TiltMax="280"/>
+   <Technical PowerConsumption="720" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan Fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt Fine</Channel>
+  <Channel Number="4">Pan / Tilt Speed</Channel>
+  <Channel Number="5">Dimmer</Channel>
+  <Channel Number="6">Strobe</Channel>
+  <Channel Number="7">Red</Channel>
+  <Channel Number="8">Green</Channel>
+  <Channel Number="9">Blue</Channel>
+  <Channel Number="10">White</Channel>
+  <Channel Number="11">Amber</Channel>
+  <Channel Number="12">UV</Channel>
+  <Channel Number="13">Color Choice</Channel>
+  <Channel Number="14">Macro</Channel>
+  <Channel Number="15">Macro Speed</Channel>
+  <Channel Number="16">Zoom</Channel>
+  <Channel Number="17">Pan / Tilt Parameter</Channel>
+  <Channel Number="18">Sound / Auto / Reset</Channel>
+ </Mode>
+</FixtureDefinition>

@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://qlcplus.sourceforge.net/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.8.4</Version>
+  <Author>Rodolfo Thierry</Author>
+ </Creator>
+ <Manufacturer>Event Bar</Manufacturer>
+ <Model>Event Bar 4 Led RGBW</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan 1">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Pan Fine 1">
+  <Group Byte="1">Pan</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Tilt 1">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Tilt Fine 1">
+  <Group Byte="1">Tilt</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Pan/Tilt Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Min > Max</Capability>
+ </Channel>
+ <Channel Name="Strob">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="1">Stop</Capability>
+  <Capability Min="2" Max="255">Min > Max</Capability>
+ </Channel>
+ <Channel Name="Green 1">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="White 1">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Red 1">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Blue 1">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Pan 2">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Pan Fine 2">
+  <Group Byte="1">Pan</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Tilt 2">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Tilt Fine 2">
+  <Group Byte="1">Tilt</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Pan/Tilt Speed 2">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Green 2">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="White 2">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Red 2">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Blue 2">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Pan 3">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Pan Fine 3">
+  <Group Byte="1">Pan</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Tilt 3">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Tilt Fine 3">
+  <Group Byte="1">Tilt</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Pan/Tilt Speed 3">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Green 3">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="White 3">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Red 3">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Blue 3">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Pan 4">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Pan Fine 4">
+  <Group Byte="1">Pan</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Tilt 4">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Tilt Fine 4">
+  <Group Byte="1">Tilt</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Pan/Tilt Speed 4">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Green 4">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="White 4">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Red 4">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Blue 4">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">0&lt;Max</Capability>
+ </Channel>
+ <Channel Name="Macro">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">0>100</Capability>
+ </Channel>
+ <Channel Name="Reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="255">Reset 255 to 0</Capability>
+ </Channel>
+ <Mode Name="Mode 39 Chanels">
+  <Physical>
+   <Bulb Lumens="0" Type="LED" ColourTemperature="0"/>
+   <Dimensions Depth="0" Height="0" Weight="12" Width="0"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus TiltMax="0" PanMax="0" Type="Head"/>
+   <Technical PowerConsumption="70" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Pan 1</Channel>
+  <Channel Number="1">Pan Fine 1</Channel>
+  <Channel Number="2">Tilt 1</Channel>
+  <Channel Number="3">Tilt Fine 1</Channel>
+  <Channel Number="4">Pan/Tilt Speed</Channel>
+  <Channel Number="5">Dimmer</Channel>
+  <Channel Number="6">Strob</Channel>
+  <Channel Number="7">Green 1</Channel>
+  <Channel Number="8">White 1</Channel>
+  <Channel Number="9">Red 1</Channel>
+  <Channel Number="10">Blue 1</Channel>
+  <Channel Number="11">Pan 2</Channel>
+  <Channel Number="12">Pan Fine 2</Channel>
+  <Channel Number="13">Tilt 2</Channel>
+  <Channel Number="14">Tilt Fine 2</Channel>
+  <Channel Number="15">Pan/Tilt Speed 2</Channel>
+  <Channel Number="16">Green 2</Channel>
+  <Channel Number="17">White 2</Channel>
+  <Channel Number="18">Red 2</Channel>
+  <Channel Number="19">Blue 2</Channel>
+  <Channel Number="20">Pan 3</Channel>
+  <Channel Number="21">Pan Fine 3</Channel>
+  <Channel Number="22">Tilt 3</Channel>
+  <Channel Number="23">Tilt Fine 3</Channel>
+  <Channel Number="24">Pan/Tilt Speed 3</Channel>
+  <Channel Number="25">Green 3</Channel>
+  <Channel Number="26">White 3</Channel>
+  <Channel Number="27">Red 3</Channel>
+  <Channel Number="28">Blue 3</Channel>
+  <Channel Number="29">Pan 4</Channel>
+  <Channel Number="30">Pan Fine 4</Channel>
+  <Channel Number="31">Tilt 4</Channel>
+  <Channel Number="32">Tilt Fine 4</Channel>
+  <Channel Number="33">Pan/Tilt Speed 4</Channel>
+  <Channel Number="34">Green 4</Channel>
+  <Channel Number="35">White 4</Channel>
+  <Channel Number="36">Red 4</Channel>
+  <Channel Number="37">Blue 4</Channel>
+  <Channel Number="38">Reset</Channel>
+  <Head>
+   <Channel>10</Channel>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>7</Channel>
+  </Head>
+  <Head>
+   <Channel>11</Channel>
+   <Channel>14</Channel>
+   <Channel>12</Channel>
+   <Channel>13</Channel>
+   <Channel>18</Channel>
+   <Channel>19</Channel>
+   <Channel>16</Channel>
+   <Channel>17</Channel>
+  </Head>
+  <Head>
+   <Channel>21</Channel>
+   <Channel>26</Channel>
+   <Channel>27</Channel>
+   <Channel>25</Channel>
+   <Channel>28</Channel>
+   <Channel>22</Channel>
+   <Channel>23</Channel>
+   <Channel>20</Channel>
+  </Head>
+  <Head>
+   <Channel>30</Channel>
+   <Channel>31</Channel>
+   <Channel>29</Channel>
+   <Channel>34</Channel>
+   <Channel>35</Channel>
+   <Channel>32</Channel>
+   <Channel>36</Channel>
+   <Channel>37</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="Mode 13 Chanels">
+  <Physical>
+   <Bulb Lumens="0" Type="LED" ColourTemperature="0"/>
+   <Dimensions Depth="0" Height="0" Weight="12" Width="0"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus TiltMax="0" PanMax="0" Type="Head"/>
+   <Technical PowerConsumption="70" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Pan 1</Channel>
+  <Channel Number="1">Pan Fine 1</Channel>
+  <Channel Number="2">Tilt 1</Channel>
+  <Channel Number="3">Tilt Fine 1</Channel>
+  <Channel Number="4">Pan/Tilt Speed</Channel>
+  <Channel Number="5">Dimmer</Channel>
+  <Channel Number="6">Strob</Channel>
+  <Channel Number="7">Green 1</Channel>
+  <Channel Number="8">White 1</Channel>
+  <Channel Number="9">Red 1</Channel>
+  <Channel Number="10">Blue 1</Channel>
+  <Channel Number="11">Macro</Channel>
+  <Channel Number="12">Reset</Channel>
+ </Mode>
+</FixtureDefinition>
