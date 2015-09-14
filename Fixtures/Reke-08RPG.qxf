@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://qlcplus.sourceforge.net/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.9.1</Version>
+  <Author>Ovidijus Cepukas</Author>
+ </Creator>
+ <Manufacturer>Reke</Manufacturer>
+ <Model>08RPG</Model>
+ <Type>Laser</Type>
+ <Channel Name="Control mode">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="69">Shut off</Capability>
+  <Capability Min="70" Max="139">Sound control</Capability>
+  <Capability Min="140" Max="209">Auto play</Capability>
+  <Capability Min="210" Max="255">manual</Capability>
+ </Channel>
+ <Channel Name="Pattern Selection">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="33">Static pattern</Capability>
+  <Capability Min="34" Max="255">Dynamic Geometric pattern</Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="255">8 grade speed 0-255)/30=0-8do</Capability>
+ </Channel>
+ <Channel Name="Spot and line">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255">From line to spot effect</Capability>
+ </Channel>
+ <Channel Name="Horizontal move">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="160">Manual</Capability>
+  <Capability Min="161" Max="190">From left to right move</Capability>
+  <Capability Min="191" Max="220">From right to left move</Capability>
+  <Capability Min="221" Max="255">Right and left in-phase move</Capability>
+ </Channel>
+ <Channel Name="Vertical move">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="160">Manual</Capability>
+  <Capability Min="161" Max="190">From down to up</Capability>
+  <Capability Min="191" Max="220">From up to down</Capability>
+  <Capability Min="221" Max="255">Up and down in-phase move</Capability>
+ </Channel>
+ <Channel Name="Zoom(+/-) pattern size">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255">pattern size change</Capability>
+ </Channel>
+ <Channel Name="Reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="255">The number come to more
+Than 200,the machine reset</Capability>
+ </Channel>
+ <Mode Name="Default">
+  <Physical>
+   <Bulb ColourTemperature="0" Type="" Lumens="0"/>
+   <Dimensions Depth="220" Weight="4" Width="295" Height="148"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus TiltMax="0" Type="Fixed" PanMax="0"/>
+   <Technical DmxConnector="5-pin" PowerConsumption="0"/>
+  </Physical>
+  <Channel Number="0">Control mode</Channel>
+  <Channel Number="1">Pattern Selection</Channel>
+  <Channel Number="2">Strobe</Channel>
+  <Channel Number="3">Spot and line</Channel>
+  <Channel Number="4">Horizontal move</Channel>
+  <Channel Number="5">Vertical move</Channel>
+  <Channel Number="6">Zoom(+/-) pattern size</Channel>
+  <Channel Number="7">Reset</Channel>
+ </Mode>
+</FixtureDefinition>
