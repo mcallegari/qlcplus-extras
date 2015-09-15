@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://qlcplus.sourceforge.net/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.9.1</Version>
+  <Author>mumbles</Author>
+ </Creator>
+ <Manufacturer>ProPresenter</Manufacturer>
+ <Model>V6</Model>
+ <Type>Other</Type>
+ <Channel Name="Select Library Playlist">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="0">No function</Capability>
+  <Capability Min="1" Max="255">Trigger with range: 1-255</Capability>
+ </Channel>
+ <Channel Name="Trigger Slide">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="0">No function</Capability>
+  <Capability Min="1" Max="255">Trigger with range: 1-255</Capability>
+ </Channel>
+ <Channel Name="Select Video/Image Playlist">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="0">No function</Capability>
+  <Capability Min="1" Max="255">Trigger with range: 1-255</Capability>
+ </Channel>
+ <Channel Name="Trigger Video/Image">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="0">No function</Capability>
+  <Capability Min="1" Max="255">Trigger with range: 1-255</Capability>
+ </Channel>
+ <Channel Name="Select Audio Playlist">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="0">No function</Capability>
+  <Capability Min="1" Max="255">Trigger with range: 1-255</Capability>
+ </Channel>
+ <Channel Name="Trigger Audio">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="0">No function</Capability>
+  <Capability Min="1" Max="255">Trigger with range: 1-255</Capability>
+ </Channel>
+ <Channel Name="Transition Type">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="255">Select transition type based on index</Capability>
+ </Channel>
+ <Channel Name="Transition Duration">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="255">Set transition duration</Capability>
+ </Channel>
+ <Channel Name="Timer Start">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="0">No function</Capability>
+  <Capability Min="1" Max="255">Start timer with range: 1-255</Capability>
+ </Channel>
+ <Channel Name="Timer Stop">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="0">No function</Capability>
+  <Capability Min="1" Max="255">Stop timer with range: 1-255</Capability>
+ </Channel>
+ <Channel Name="Timer Reset">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="0">No function</Capability>
+  <Capability Min="1" Max="255">Reset timer with range: 1-255</Capability>
+ </Channel>
+ <Channel Name="Control Channel">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="1" Max="5">Clear All</Capability>
+  <Capability Min="6" Max="10">Clear Slide</Capability>
+  <Capability Min="11" Max="15">Clear Background</Capability>
+  <Capability Min="16" Max="20">Clear Props</Capability>
+  <Capability Min="21" Max="25">Clear Audio</Capability>
+  <Capability Min="26" Max="30">Clear To Logo</Capability>
+  <Capability Min="31" Max="35">Video Control: Go To Beginning</Capability>
+  <Capability Min="36" Max="40">Video Control: Play</Capability>
+  <Capability Min="41" Max="45">Video Contro: Pause</Capability>
+  <Capability Min="46" Max="50">Video Control:Play/Pause</Capability>
+  <Capability Min="51" Max="55">Playlist: Go To Previous Cue</Capability>
+  <Capability Min="56" Max="60">Playlist: Go To Next Cue</Capability>
+  <Capability Min="61" Max="65">Timeline: Start</Capability>
+  <Capability Min="66" Max="70">Timeline: Stop</Capability>
+  <Capability Min="71" Max="75">Timeline: Go To Beginning</Capability>
+  <Capability Min="76" Max="255">Nothing</Capability>
+ </Channel>
+ <Mode Name="ProPresenter 6">
+  <Physical>
+   <Bulb Type="Software" ColourTemperature="0" Lumens="0"/>
+   <Dimensions Depth="0" Weight="0" Height="0" Width="0"/>
+   <Lens DegreesMin="0" Name="Other" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical DmxConnector="Other" PowerConsumption="0"/>
+  </Physical>
+  <Channel Number="0">Select Library Playlist</Channel>
+  <Channel Number="1">Trigger Slide</Channel>
+  <Channel Number="2">Select Video/Image Playlist</Channel>
+  <Channel Number="3">Trigger Video/Image</Channel>
+  <Channel Number="4">Select Audio Playlist</Channel>
+  <Channel Number="5">Trigger Audio</Channel>
+  <Channel Number="6">Transition Type</Channel>
+  <Channel Number="7">Transition Duration</Channel>
+  <Channel Number="8">Timer Start</Channel>
+  <Channel Number="9">Timer Stop</Channel>
+  <Channel Number="10">Timer Reset</Channel>
+  <Channel Number="11">Control Channel</Channel>
+ </Mode>
+</FixtureDefinition>
