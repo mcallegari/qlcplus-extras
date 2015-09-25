@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://qlcplus.sourceforge.net/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.9.1</Version>
+  <Author>Felix FX</Author>
+ </Creator>
+ <Manufacturer>LD</Manufacturer>
+ <Model>LD-488C</Model>
+ <Type>Laser</Type>
+ <Channel Name="Mode">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="49">Laser off</Capability>
+  <Capability Min="50" Max="99">DMX mode static patterns</Capability>
+  <Capability Min="100" Max="149">DMX mode dynamic patterns</Capability>
+  <Capability Min="150" Max="199">Sound active mode</Capability>
+  <Capability Min="200" Max="255">Auto mode</Capability>
+ </Channel>
+ <Channel Name="Pattern selection">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">52 static/dynamic patterns</Capability>
+ </Channel>
+ <Channel Name="Horizontal movement">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">Adjust position - x</Capability>
+ </Channel>
+ <Channel Name="Vertical Movement">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255">Adjust position - y</Capability>
+ </Channel>
+ <Channel Name="Scanning speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">0: quick, 255: slow</Capability>
+ </Channel>
+ <Channel Name="Speed patterns">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">0: quick, 255: slow, 10 levels</Capability>
+ </Channel>
+ <Channel Name="Static pattern size">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255">0: small, 255: big</Capability>
+ </Channel>
+ <Mode Name="Default">
+  <Physical>
+   <Bulb ColourTemperature="0" Lumens="0" Type="Laser"/>
+   <Dimensions Height="150" Depth="180" Width="600" Weight="6.8"/>
+   <Lens Name="Other" DegreesMax="0" DegreesMin="0"/>
+   <Focus PanMax="0" TiltMax="0" Type="Fixed"/>
+   <Technical DmxConnector="3-pin" PowerConsumption="30"/>
+  </Physical>
+  <Channel Number="0">Mode</Channel>
+  <Channel Number="1">Pattern selection</Channel>
+  <Channel Number="2">Horizontal movement</Channel>
+  <Channel Number="3">Vertical Movement</Channel>
+  <Channel Number="4">Scanning speed</Channel>
+  <Channel Number="5">Speed patterns</Channel>
+  <Channel Number="6">Static pattern size</Channel>
+ </Mode>
+</FixtureDefinition>
