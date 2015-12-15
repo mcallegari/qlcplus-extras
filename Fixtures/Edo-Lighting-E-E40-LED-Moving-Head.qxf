@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.2 GIT</Version>
+  <Author>Rico Hansen www.ricohansen.dk</Author>
+ </Creator>
+ <Manufacturer>Edo Lighting</Manufacturer>
+ <Model>E-E40 LED Moving Head</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">0-540°</Capability>
+ </Channel>
+ <Channel Name="Tilt">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="127">360° stroke positioning</Capability>
+  <Capability Min="128" Max="191">Forward rotation from fast to slow.</Capability>
+  <Capability Min="192" Max="255">Reverse rotation from slow to fast</Capability>
+ </Channel>
+ <Channel Name="Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">R, G, B, W from dark to bright</Capability>
+ </Channel>
+ <Channel Name="R Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">From dark to bright</Capability>
+ </Channel>
+ <Channel Name="G Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">From dark to bright</Capability>
+ </Channel>
+ <Channel Name="B Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">From dark to bright</Capability>
+ </Channel>
+ <Channel Name="W Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">From dark to bright</Capability>
+ </Channel>
+ <Channel Name="Shutter (11 Channel)">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="15">Lamp on</Capability>
+  <Capability Min="16" Max="131">Strobe from slow to fast. </Capability>
+  <Capability Min="132" Max="139">Lamp on</Capability>
+  <Capability Min="140" Max="181">Fast start off slow.</Capability>
+  <Capability Min="182" Max="189">Lamp on. </Capability>
+  <Capability Min="190" Max="231">Slow start off fast.</Capability>
+  <Capability Min="232" Max="239">Lamp on.</Capability>
+  <Capability Min="240" Max="247">Random strobe.</Capability>
+  <Capability Min="248" Max="255">Lamp on</Capability>
+ </Channel>
+ <Channel Name="Function">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="69">No function</Capability>
+  <Capability Min="70" Max="79">When pan or tilt moves, lamp off is effective</Capability>
+  <Capability Min="80" Max="89">When pan or tilt moves, lamp off is ineffective</Capability>
+  <Capability Min="90" Max="199">No function</Capability>
+  <Capability Min="200" Max="209">All reset</Capability>
+  <Capability Min="210" Max="249">No function</Capability>
+  <Capability Min="250" Max="255">Random sound (enable after 5s)</Capability>
+ </Channel>
+ <Channel Name="Pan fine">
+  <Group Byte="1">Pan</Group>
+  <Capability Min="0" Max="255">Pan fine</Capability>
+ </Channel>
+ <Channel Name="Tilt fine">
+  <Group Byte="1">Tilt</Group>
+  <Capability Min="0" Max="255">Tilt fine</Capability>
+ </Channel>
+ <Channel Name="Color">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="7">No function</Capability>
+  <Capability Min="8" Max="127">15 fixed color</Capability>
+  <Capability Min="128" Max="191">Color jump</Capability>
+  <Capability Min="192" Max="255">Color gradient</Capability>
+ </Channel>
+ <Channel Name="Color speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">From dark to bright</Capability>
+ </Channel>
+ <Mode Name="9ch - Basic">
+  <Physical>
+   <Bulb Type="LED" Lumens="12000" ColourTemperature="0"/>
+   <Dimensions Weight="3.5" Width="250" Height="330" Depth="270"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="540" TiltMax="360"/>
+   <Technical PowerConsumption="40" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Dimmer</Channel>
+  <Channel Number="3">R Dimmer</Channel>
+  <Channel Number="4">G Dimmer</Channel>
+  <Channel Number="5">B Dimmer</Channel>
+  <Channel Number="6">W Dimmer</Channel>
+  <Channel Number="7">Shutter (11 Channel)</Channel>
+  <Channel Number="8">Function</Channel>
+ </Mode>
+ <Mode Name="13ch - Advanced">
+  <Physical>
+   <Bulb Type="LED" Lumens="12000" ColourTemperature="0"/>
+   <Dimensions Weight="3.5" Width="250" Height="330" Depth="270"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="540" TiltMax="360"/>
+   <Technical PowerConsumption="40" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">Function</Channel>
+  <Channel Number="5">Dimmer</Channel>
+  <Channel Number="6">Shutter (11 Channel)</Channel>
+  <Channel Number="7">R Dimmer</Channel>
+  <Channel Number="8">G Dimmer</Channel>
+  <Channel Number="9">B Dimmer</Channel>
+  <Channel Number="10">W Dimmer</Channel>
+  <Channel Number="11">Color</Channel>
+  <Channel Number="12">Color speed</Channel>
+ </Mode>
+</FixtureDefinition>
