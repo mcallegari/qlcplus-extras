@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.2 GIT</Version>
+  <Author>DjProWings</Author>
+ </Creator>
+ <Manufacturer>Shinp</Manufacturer>
+ <Model>DL-55C</Model>
+ <Type>Laser</Type>
+ <Channel Name="Mode">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="49">Close, laser off</Capability>
+  <Capability Min="50" Max="99">Static patterns</Capability>
+  <Capability Min="100" Max="149">Dynamic patterns</Capability>
+  <Capability Min="150" Max="199">Sound active</Capability>
+  <Capability Min="200" Max="255">Auto mode</Capability>
+ </Channel>
+ <Channel Name="Pattern Selection">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="4"></Capability>
+  <Capability Min="5" Max="9"></Capability>
+  <Capability Min="10" Max="14"></Capability>
+  <Capability Min="15" Max="19"></Capability>
+  <Capability Min="20" Max="24"></Capability>
+  <Capability Min="25" Max="29"></Capability>
+  <Capability Min="30" Max="34"></Capability>
+  <Capability Min="35" Max="39"></Capability>
+  <Capability Min="40" Max="44"></Capability>
+  <Capability Min="45" Max="49"></Capability>
+  <Capability Min="50" Max="54"></Capability>
+  <Capability Min="55" Max="59"></Capability>
+  <Capability Min="60" Max="64"></Capability>
+  <Capability Min="65" Max="69"></Capability>
+  <Capability Min="70" Max="74"></Capability>
+  <Capability Min="75" Max="79"></Capability>
+  <Capability Min="80" Max="84"></Capability>
+  <Capability Min="85" Max="89"></Capability>
+  <Capability Min="90" Max="94"></Capability>
+  <Capability Min="95" Max="99"></Capability>
+  <Capability Min="100" Max="104"></Capability>
+  <Capability Min="105" Max="109"></Capability>
+  <Capability Min="110" Max="114"></Capability>
+  <Capability Min="115" Max="119"></Capability>
+  <Capability Min="120" Max="124"></Capability>
+  <Capability Min="125" Max="129"></Capability>
+  <Capability Min="130" Max="134"></Capability>
+  <Capability Min="135" Max="139"></Capability>
+  <Capability Min="140" Max="144"></Capability>
+  <Capability Min="145" Max="149"></Capability>
+  <Capability Min="150" Max="154"></Capability>
+  <Capability Min="155" Max="159"></Capability>
+  <Capability Min="160" Max="164"></Capability>
+  <Capability Min="165" Max="169"></Capability>
+  <Capability Min="170" Max="174"></Capability>
+  <Capability Min="175" Max="179"></Capability>
+  <Capability Min="180" Max="184"></Capability>
+  <Capability Min="185" Max="189"></Capability>
+  <Capability Min="190" Max="194"></Capability>
+  <Capability Min="195" Max="199"></Capability>
+  <Capability Min="200" Max="204"></Capability>
+  <Capability Min="205" Max="209"></Capability>
+  <Capability Min="210" Max="214"></Capability>
+  <Capability Min="215" Max="219"></Capability>
+  <Capability Min="220" Max="224"></Capability>
+  <Capability Min="225" Max="229"></Capability>
+  <Capability Min="230" Max="234"></Capability>
+  <Capability Min="235" Max="239"></Capability>
+  <Capability Min="240" Max="244"></Capability>
+  <Capability Min="245" Max="249"></Capability>
+  <Capability Min="250" Max="254"></Capability>
+  <Capability Min="255" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Position-X">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Adjust position-X</Capability>
+ </Channel>
+ <Channel Name="Position-Y">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Adjust position-Y</Capability>
+ </Channel>
+ <Channel Name="Scanning Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">0 is speedy, 255 is slow</Capability>
+ </Channel>
+ <Channel Name="Dynamic Patterns Play Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">0 is speedy, 255 is slow, has ten discrete speeds</Capability>
+ </Channel>
+ <Channel Name="Static Pattern Size">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255">0 is small, 255 is big</Capability>
+ </Channel>
+ <Mode Name="7 Channels">
+  <Physical>
+   <Bulb Type="Laser" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="6.8" Width="600" Height="150" Depth="1800"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="30" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Mode</Channel>
+  <Channel Number="1">Pattern Selection</Channel>
+  <Channel Number="2">Position-X</Channel>
+  <Channel Number="3">Position-Y</Channel>
+  <Channel Number="4">Scanning Speed</Channel>
+  <Channel Number="5">Dynamic Patterns Play Speed</Channel>
+  <Channel Number="6">Static Pattern Size</Channel>
+ </Mode>
+</FixtureDefinition>
