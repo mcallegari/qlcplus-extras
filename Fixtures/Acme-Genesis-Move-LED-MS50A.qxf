@@ -1,13 +1,13 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE FixtureDefinition>
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.9.1</Version>
+  <Version>4.10.5 GIT</Version>
   <Author>jaqueza@gmx.com</Author>
  </Creator>
  <Manufacturer>Acme</Manufacturer>
- <Model>LED-MS50A Genesis Move</Model>
+ <Model>Genesis Move LED-MS50A</Model>
  <Type>Moving Head</Type>
  <Channel Name="Pan">
   <Group Byte="0">Pan</Group>
@@ -44,14 +44,14 @@
  <Channel Name="Gobo 2">
   <Group Byte="0">Gobo</Group>
   <Capability Min="0" Max="7">White</Capability>
-  <Capability Min="8" Res="Acme/gobo00008.png" Max="14">1</Capability>
-  <Capability Min="15" Res="Acme/gobo00009.png" Max="21">2</Capability>
-  <Capability Min="22" Res="Acme/gobo00010.png" Max="28">3</Capability>
-  <Capability Min="29" Res="Acme/gobo00011.png" Max="35">4</Capability>
-  <Capability Min="36" Res="Acme/gobo00012.png" Max="42">5</Capability>
-  <Capability Min="43" Res="Acme/gobo00013.png" Max="49">6</Capability>
-  <Capability Min="50" Res="Acme/gobo00014.png" Max="56">7</Capability>
-  <Capability Min="57" Res="Acme/gobo00015.png" Max="63">8</Capability>
+  <Capability Min="8" Max="14" Res="Acme/gobo00008.png">1</Capability>
+  <Capability Min="15" Max="21" Res="Acme/gobo00009.png">2</Capability>
+  <Capability Min="22" Max="28" Res="Acme/gobo00010.png">3</Capability>
+  <Capability Min="29" Max="35" Res="Acme/gobo00011.png">4</Capability>
+  <Capability Min="36" Max="42" Res="Acme/gobo00012.png">5</Capability>
+  <Capability Min="43" Max="49" Res="Acme/gobo00013.png">6</Capability>
+  <Capability Min="50" Max="56" Res="Acme/gobo00014.png">7</Capability>
+  <Capability Min="57" Max="63" Res="Acme/gobo00015.png">8</Capability>
   <Capability Min="64" Max="71">1 shaking</Capability>
   <Capability Min="72" Max="79">2 shaking</Capability>
   <Capability Min="80" Max="87">3 shaking</Capability>
@@ -111,21 +111,21 @@
  </Channel>
  <Channel Name="Color Wheel (Split Color)">
   <Group Byte="0">Colour</Group>
-  <Capability Min="0" Color="#ffffff" Max="7">White</Capability>
-  <Capability Min="8" Color="#ffffff" Color2="#ffff00" Max="14">C1 white + yellow</Capability>
-  <Capability Min="15" Color="#ffff00" Max="22">C2 yellow</Capability>
-  <Capability Min="23" Color="#ffff00" Color2="#0055ff" Max="29">C3 yellow + light blue</Capability>
-  <Capability Min="30" Color="#0055ff" Max="37">C4 light blue</Capability>
-  <Capability Min="38" Color="#0055ff" Color2="#00ff00" Max="44">C5 light blue + green</Capability>
-  <Capability Min="45" Color="#00ff00" Max="52">C6 green</Capability>
-  <Capability Min="53" Color="#00ff00" Color2="#ff0000" Max="59">C7 green + red</Capability>
-  <Capability Min="60" Color="#ff0000" Max="67">C8 red</Capability>
-  <Capability Min="68" Color="#ff0000" Color2="#ff00ff" Max="74">C9 red + magenta</Capability>
-  <Capability Min="75" Color="#ff00ff" Max="82">C10 magenta</Capability>
-  <Capability Min="83" Color="#ff00ff" Color2="#0000ff" Max="89">C11 magenta + blue</Capability>
-  <Capability Min="90" Color="#0000ff" Max="97">C12 blue</Capability>
-  <Capability Min="98" Color="#0000ff" Color2="#ff5500" Max="104">C13 blue + orange</Capability>
-  <Capability Min="105" Color="#ff5500" Max="127">C14 orange</Capability>
+  <Capability Min="0" Max="7" Color="#ffffff">White</Capability>
+  <Capability Min="8" Max="14" Color="#ffffff" Color2="#ffff00">C1 white + yellow</Capability>
+  <Capability Min="15" Max="22" Color="#ffff00">C2 yellow</Capability>
+  <Capability Min="23" Max="29" Color="#ffff00" Color2="#0055ff">C3 yellow + light blue</Capability>
+  <Capability Min="30" Max="37" Color="#0055ff">C4 light blue</Capability>
+  <Capability Min="38" Max="44" Color="#0055ff" Color2="#00ff00">C5 light blue + green</Capability>
+  <Capability Min="45" Max="52" Color="#00ff00">C6 green</Capability>
+  <Capability Min="53" Max="59" Color="#00ff00" Color2="#ff0000">C7 green + red</Capability>
+  <Capability Min="60" Max="67" Color="#ff0000">C8 red</Capability>
+  <Capability Min="68" Max="74" Color="#ff0000" Color2="#ff00ff">C9 red + magenta</Capability>
+  <Capability Min="75" Max="82" Color="#ff00ff">C10 magenta</Capability>
+  <Capability Min="83" Max="89" Color="#ff00ff" Color2="#0000ff">C11 magenta + blue</Capability>
+  <Capability Min="90" Max="97" Color="#0000ff">C12 blue</Capability>
+  <Capability Min="98" Max="104" Color="#0000ff" Color2="#ff5500">C13 blue + orange</Capability>
+  <Capability Min="105" Max="127" Color="#ff5500">C14 orange</Capability>
   <Capability Min="128" Max="189">Rotation anticlockwise, fast to slow</Capability>
   <Capability Min="190" Max="193">Stop</Capability>
   <Capability Min="194" Max="255">Rotation clockwise, slow to fast</Capability>
@@ -133,13 +133,13 @@
  <Channel Name="Colour Wheel (Normal)">
   <Group Byte="0">Colour</Group>
   <Capability Min="0" Max="14">White</Capability>
-  <Capability Min="15" Color="#ffff00" Max="28">C1 yellow</Capability>
-  <Capability Min="29" Color="#0055ff" Max="42">C2 light blue</Capability>
+  <Capability Min="15" Max="28" Color="#ffff00">C1 yellow</Capability>
+  <Capability Min="29" Max="42" Color="#0055ff">C2 light blue</Capability>
   <Capability Min="43" Max="56">C3 green</Capability>
-  <Capability Min="57" Color="#ff0000" Max="70">C4 red</Capability>
-  <Capability Min="71" Color="#ff00ff" Max="84">C5 magenta</Capability>
-  <Capability Min="85" Color="#0000ff" Max="98">C6 blue</Capability>
-  <Capability Min="99" Color="#ff5500" Max="127">C7 orange</Capability>
+  <Capability Min="57" Max="70" Color="#ff0000">C4 red</Capability>
+  <Capability Min="71" Max="84" Color="#ff00ff">C5 magenta</Capability>
+  <Capability Min="85" Max="98" Color="#0000ff">C6 blue</Capability>
+  <Capability Min="99" Max="127" Color="#ff5500">C7 orange</Capability>
   <Capability Min="128" Max="189">Rotation anticlockwise, fast to slow</Capability>
   <Capability Min="190" Max="193">Stop</Capability>
   <Capability Min="194" Max="255">Rotation clockwise, slow to fast</Capability>
@@ -147,13 +147,13 @@
  <Channel Name="Gobo 1">
   <Group Byte="0">Gobo</Group>
   <Capability Min="0" Max="7">White</Capability>
-  <Capability Min="8" Res="Acme/gobo00008.png" Max="15">1</Capability>
-  <Capability Min="16" Res="Acme/gobo00009.png" Max="23">2</Capability>
-  <Capability Min="24" Res="Acme/gobo00010.png" Max="31">3</Capability>
-  <Capability Min="32" Res="Acme/gobo00011.png" Max="39">4</Capability>
-  <Capability Min="40" Res="Acme/gobo00012.png" Max="47">5</Capability>
-  <Capability Min="48" Res="Acme/gobo00013.png" Max="55">6</Capability>
-  <Capability Min="56" Res="Acme/gobo00014.png" Max="63">7</Capability>
+  <Capability Min="8" Max="15" Res="Acme/gobo00008.png">1</Capability>
+  <Capability Min="16" Max="23" Res="Acme/gobo00009.png">2</Capability>
+  <Capability Min="24" Max="31" Res="Acme/gobo00010.png">3</Capability>
+  <Capability Min="32" Max="39" Res="Acme/gobo00011.png">4</Capability>
+  <Capability Min="40" Max="47" Res="Acme/gobo00012.png">5</Capability>
+  <Capability Min="48" Max="55" Res="Acme/gobo00013.png">6</Capability>
+  <Capability Min="56" Max="63" Res="Acme/gobo00014.png">7</Capability>
   <Capability Min="64" Max="73">1 shaking</Capability>
   <Capability Min="74" Max="82">2 shaking</Capability>
   <Capability Min="83" Max="91">3 shaking</Capability>
@@ -167,9 +167,9 @@
  </Channel>
  <Mode Name="16Ch Split Colour">
   <Physical>
-   <Bulb Lumens="0" Type="LED" ColourTemperature="0"/>
-   <Dimensions Height="247" Weight="10.2" Depth="437" Width="299"/>
-   <Lens DegreesMax="17" DegreesMin="17" Name="Other"/>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="10.2" Width="299" Height="247" Depth="437"/>
+   <Lens Name="Other" DegreesMin="17" DegreesMax="17"/>
    <Focus Type="Fixed" PanMax="540" TiltMax="270"/>
    <Technical PowerConsumption="130" DmxConnector="3-pin"/>
   </Physical>
@@ -192,9 +192,9 @@
  </Mode>
  <Mode Name="16Ch Normal Colour">
   <Physical>
-   <Bulb Lumens="0" Type="LED" ColourTemperature="0"/>
-   <Dimensions Height="247" Weight="10.2" Depth="437" Width="299"/>
-   <Lens DegreesMax="17" DegreesMin="17" Name="Other"/>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="10.2" Width="299" Height="247" Depth="437"/>
+   <Lens Name="Other" DegreesMin="17" DegreesMax="17"/>
    <Focus Type="Fixed" PanMax="540" TiltMax="270"/>
    <Technical PowerConsumption="130" DmxConnector="3-pin"/>
   </Physical>
@@ -217,9 +217,9 @@
  </Mode>
  <Mode Name="15Ch Split Colour">
   <Physical>
-   <Bulb Lumens="0" Type="LED" ColourTemperature="0"/>
-   <Dimensions Height="247" Weight="10.2" Depth="437" Width="299"/>
-   <Lens DegreesMax="17" DegreesMin="17" Name="Other"/>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="10.2" Width="299" Height="247" Depth="437"/>
+   <Lens Name="Other" DegreesMin="17" DegreesMax="17"/>
    <Focus Type="Fixed" PanMax="540" TiltMax="270"/>
    <Technical PowerConsumption="130" DmxConnector="3-pin"/>
   </Physical>
@@ -241,9 +241,9 @@
  </Mode>
  <Mode Name="15Ch Normal Colour">
   <Physical>
-   <Bulb Lumens="0" Type="LED" ColourTemperature="0"/>
-   <Dimensions Height="247" Weight="10.2" Depth="437" Width="299"/>
-   <Lens DegreesMax="17" DegreesMin="17" Name="Other"/>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="10.2" Width="299" Height="247" Depth="437"/>
+   <Lens Name="Other" DegreesMin="17" DegreesMax="17"/>
    <Focus Type="Fixed" PanMax="540" TiltMax="270"/>
    <Technical PowerConsumption="130" DmxConnector="3-pin"/>
   </Physical>
