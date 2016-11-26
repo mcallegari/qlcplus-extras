@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.5 GIT</Version>
+  <Author>xv28901</Author>
+ </Creator>
+ <Manufacturer>Laxida</Manufacturer>
+ <Model>Mini Wash 9/14</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">Pan</Capability>
+ </Channel>
+ <Channel Name="Tilt">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Dim/Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="7">Off</Capability>
+  <Capability Min="8" Max="134">Dim</Capability>
+  <Capability Min="135" Max="239">Strobe</Capability>
+  <Capability Min="240" Max="255">Medallion</Capability>
+ </Channel>
+ <Channel Name="Red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255" Color="#ff0000">Red</Capability>
+ </Channel>
+ <Channel Name="Green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255" Color="#55ff00">Green</Capability>
+ </Channel>
+ <Channel Name="Blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255" Color="#0000ff"></Capability>
+ </Channel>
+ <Channel Name="White">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255" Color="#ffffff"></Capability>
+ </Channel>
+ <Channel Name="Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Speed</Capability>
+ </Channel>
+ <Channel Name="Reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="150" Max="200">Reset</Capability>
+ </Channel>
+ <Channel Name="PanDim">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="TiltDim">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Colour Selection">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="7">Colour Selection</Capability>
+  <Capability Min="8" Max="234">Colour Combination</Capability>
+  <Capability Min="235" Max="255">Colour Jump</Capability>
+ </Channel>
+ <Channel Name="Mode">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="142">Auto</Capability>
+  <Capability Min="143" Max="255">Sound</Capability>
+ </Channel>
+ <Channel Name="Colour Speed">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Mode Name="9 Channel">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="3.31" Width="170" Height="240" Depth="170"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="540" TiltMax="180"/>
+   <Technical PowerConsumption="105" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Dim/Strobe</Channel>
+  <Channel Number="3">Red</Channel>
+  <Channel Number="4">Green</Channel>
+  <Channel Number="5">Blue</Channel>
+  <Channel Number="6">White</Channel>
+  <Channel Number="7">Speed</Channel>
+  <Channel Number="8">Reset</Channel>
+  <Head>
+   <Channel>8</Channel>
+   <Channel>7</Channel>
+   <Channel>6</Channel>
+   <Channel>5</Channel>
+   <Channel>4</Channel>
+   <Channel>3</Channel>
+   <Channel>2</Channel>
+   <Channel>1</Channel>
+   <Channel>0</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="14 Channel">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="3.31" Width="170" Height="240" Depth="170"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="540" TiltMax="180"/>
+   <Technical PowerConsumption="105" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">PanDim</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">TiltDim</Channel>
+  <Channel Number="4">Speed</Channel>
+  <Channel Number="5">Dim/Strobe</Channel>
+  <Channel Number="6">Red</Channel>
+  <Channel Number="7">Green</Channel>
+  <Channel Number="8">Blue</Channel>
+  <Channel Number="9">White</Channel>
+  <Channel Number="10">Colour Selection</Channel>
+  <Channel Number="11">Colour Speed</Channel>
+  <Channel Number="12">Mode</Channel>
+  <Channel Number="13">Reset</Channel>
+  <Head>
+   <Channel>13</Channel>
+   <Channel>12</Channel>
+   <Channel>11</Channel>
+   <Channel>10</Channel>
+   <Channel>9</Channel>
+   <Channel>8</Channel>
+   <Channel>7</Channel>
+   <Channel>6</Channel>
+   <Channel>5</Channel>
+   <Channel>4</Channel>
+   <Channel>3</Channel>
+   <Channel>2</Channel>
+   <Channel>1</Channel>
+   <Channel>0</Channel>
+  </Head>
+ </Mode>
+</FixtureDefinition>
