@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.0 GIT</Version>
+  <Author>Andrew</Author>
+ </Creator>
+ <Manufacturer>Big Dipper</Manufacturer>
+ <Model>LM108</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="White" Preset="IntensityWhite"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Pan/Tilt speed" Preset="SpeedPanTiltSlowFast"/>
+ <Channel Name="Effect">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="10">Other channels work</Capability>
+  <Capability Min="11" Max="127">Colour combination change</Capability>
+  <Capability Min="128" Max="160">Colour status step</Capability>
+  <Capability Min="161" Max="200">Colour gradual change 1</Capability>
+  <Capability Min="201" Max="255">Colour gradual change 2</Capability>
+ </Channel>
+ <Channel Name="Speed Adjustment">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">For the 10th channel</Capability>
+ </Channel>
+ <Channel Name="Built-in Effect">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Built-in effect</Capability>
+ </Channel>
+ <Channel Name="Built-in Effect Speed Adjustment">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Built-in Effect Speed Adjustment</Capability>
+ </Channel>
+ <Channel Name="Pan fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt fine" Preset="PositionTiltFine"/>
+ <Channel Name="Reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="150" Max="200">Reset</Capability>
+ </Channel>
+ <Mode Name="16-channel">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Master dimmer</Channel>
+  <Channel Number="3">Red</Channel>
+  <Channel Number="4">Green</Channel>
+  <Channel Number="5">Blue</Channel>
+  <Channel Number="6">White</Channel>
+  <Channel Number="7">Strobe</Channel>
+  <Channel Number="8">Pan/Tilt speed</Channel>
+  <Channel Number="9">Effect</Channel>
+  <Channel Number="10">Speed Adjustment</Channel>
+  <Channel Number="11">Built-in Effect</Channel>
+  <Channel Number="12">Built-in Effect Speed Adjustment</Channel>
+  <Channel Number="13">Pan fine</Channel>
+  <Channel Number="14">Tilt fine</Channel>
+  <Channel Number="15">Reset</Channel>
+ </Mode>
+ <Mode Name="9-channel">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Master dimmer</Channel>
+  <Channel Number="3">Red</Channel>
+  <Channel Number="4">Green</Channel>
+  <Channel Number="5">Blue</Channel>
+  <Channel Number="6">White</Channel>
+  <Channel Number="7">Strobe</Channel>
+  <Channel Number="8">Pan/Tilt speed</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="4.8" Width="260" Height="165" Depth="265"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="540" TiltMax="270"/>
+  <Technical PowerConsumption="150" DmxConnector=""/>
+ </Physical>
+</FixtureDefinition>
