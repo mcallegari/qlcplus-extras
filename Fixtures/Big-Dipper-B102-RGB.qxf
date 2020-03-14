@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.11.2</Version>
+  <Author>VJ DSG</Author>
+ </Creator>
+ <Manufacturer> Big Dipper</Manufacturer>
+ <Model>B102 RGB</Model>
+ <Type>Laser</Type>
+ <Channel Name="Control Mode">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="63">Shut Off the Laser diode</Capability>
+  <Capability Min="64" Max="127">Sound Control Mode</Capability>
+  <Capability Min="128" Max="191">Auto Control Mode</Capability>
+  <Capability Min="192" Max="255">Manual Mode</Capability>
+ </Channel>
+ <Channel Name="Pattern A">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">A Pattern Selection</Capability>
+ </Channel>
+ <Channel Name="Pattern B">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">A Pattern Selection</Capability>
+ </Channel>
+ <Channel Name="Pattern C">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">A Pattern Selection</Capability>
+ </Channel>
+ <Channel Name="Pattern D">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">A Pattern Selection</Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="15">No Strobe</Capability>
+  <Capability Min="16" Max="255">Strobe Adjusted from slow to fast</Capability>
+ </Channel>
+ <Channel Name="Horizontal Move">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="5">No move</Capability>
+  <Capability Min="6" Max="127">Manual</Capability>
+  <Capability Min="128" Max="167">Auto Left/Right</Capability>
+  <Capability Min="168" Max="200">Auto Right/Left</Capability>
+  <Capability Min="201" Max="255">Auto Bounce Right/Left</Capability>
+ </Channel>
+ <Channel Name="Vertical Move">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="5">No move</Capability>
+  <Capability Min="6" Max="127">Manual</Capability>
+  <Capability Min="128" Max="167">Auto Up/Down</Capability>
+  <Capability Min="168" Max="200">Auto Down/Up</Capability>
+  <Capability Min="201" Max="255">Auto Bounce Up/Down</Capability>
+ </Channel>
+ <Channel Name="Zoom Mode">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="5">No Zoom</Capability>
+  <Capability Min="6" Max="127">Manual Zooming</Capability>
+  <Capability Min="128" Max="167">Auto Zooming out</Capability>
+  <Capability Min="168" Max="200">Auto Zooming in</Capability>
+  <Capability Min="201" Max="255">Auto zooming</Capability>
+ </Channel>
+ <Channel Name="X axis Rotation">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="180">Manual Rotation</Capability>
+  <Capability Min="181" Max="255">Auto Rotation from slow to fast</Capability>
+ </Channel>
+ <Channel Name="Y axis Rotation">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="180">Manual Rotation</Capability>
+  <Capability Min="181" Max="255">Auto Rotation from slow to fast</Capability>
+ </Channel>
+ <Channel Name="Z axis Rotation">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="180">Manual Rotation</Capability>
+  <Capability Min="181" Max="217">Auto clockwise rotation</Capability>
+  <Capability Min="218" Max="255">auto anti-clockwise rotation</Capability>
+ </Channel>
+ <Channel Name="Display Mode">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="63">Normal Display</Capability>
+  <Capability Min="64" Max="127">Dot-line display</Capability>
+  <Capability Min="128" Max="191">Subsection Display</Capability>
+  <Capability Min="192" Max="255">Dot Display</Capability>
+ </Channel>
+ <Channel Name="Color">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="31" Color="#ff0000" Color2="#0000ff">Red Green Ble Purple</Capability>
+  <Capability Min="32" Max="63" Color="#ff0000">Red</Capability>
+  <Capability Min="64" Max="95" Color="#00ff00">green</Capability>
+  <Capability Min="96" Max="127" Color="#0000ff">Blue</Capability>
+  <Capability Min="128" Max="159" Color="#6d00ff" Color2="#0000ff">Purple &amp; Blue</Capability>
+  <Capability Min="160" Max="191" Color="#ff0000" Color2="#00ff00">Red &amp; Green</Capability>
+  <Capability Min="192" Max="223" Color="#ff0000" Color2="#00ff00">Red &amp; Green &amp; Purple</Capability>
+  <Capability Min="224" Max="255" Color="#00ff00" Color2="#0000ff">Green &amp; Blue &amp; Purple</Capability>
+ </Channel>
+ <Channel Name="RESET">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="199">Normal Operation</Capability>
+  <Capability Min="200" Max="255">Reset</Capability>
+ </Channel>
+ <Mode Name="15 ch">
+  <Physical>
+   <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="6.1" Width="535" Height="208" Depth="130"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="22" TiltMax="22"/>
+   <Technical PowerConsumption="500" DmxConnector="5-pin"/>
+  </Physical>
+  <Channel Number="0">Control Mode</Channel>
+  <Channel Number="1">Pattern A</Channel>
+  <Channel Number="2">Pattern B</Channel>
+  <Channel Number="3">Pattern C</Channel>
+  <Channel Number="4">Pattern D</Channel>
+  <Channel Number="5">Strobe</Channel>
+  <Channel Number="6">Horizontal Move</Channel>
+  <Channel Number="7">Vertical Move</Channel>
+  <Channel Number="8">Zoom Mode</Channel>
+  <Channel Number="9">X axis Rotation</Channel>
+  <Channel Number="10">Y axis Rotation</Channel>
+  <Channel Number="11">Z axis Rotation</Channel>
+  <Channel Number="12">Display Mode</Channel>
+  <Channel Number="13">Color</Channel>
+  <Channel Number="14">RESET</Channel>
+ </Mode>
+</FixtureDefinition>
