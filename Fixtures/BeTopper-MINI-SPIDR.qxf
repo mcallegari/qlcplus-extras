@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>5.0.0 Beta 3</Version>
+  <Author>brandon.carr</Author>
+ </Creator>
+ <Manufacturer>BeTopper</Manufacturer>
+ <Model>LM30A</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="PAN 1" Default="1" Preset="PositionPan"/>
+ <Channel Name="PAN 2" Preset="PositionPan"/>
+ <Channel Name="Dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="9">No Strobe</Capability>
+  <Capability Min="10" Max="255">Strobe - Slow to quick</Capability>
+ </Channel>
+ <Channel Name="R1 Dimmer" Preset="IntensityRed"/>
+ <Channel Name="G1 Dimmer" Preset="IntensityGreen"/>
+ <Channel Name="B1 Dimmer" Preset="IntensityBlue"/>
+ <Channel Name="W1 Dimmer" Preset="IntensityWhite"/>
+ <Channel Name="W2 Dimmer" Preset="IntensityWhite"/>
+ <Channel Name="B2 Dimmer" Preset="IntensityBlue"/>
+ <Channel Name="G2 Dimmer" Preset="IntensityGreen"/>
+ <Channel Name="R2 Dimmer" Preset="IntensityRed"/>
+ <Channel Name="Other">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="130" Max="199">No Function</Capability>
+  <Capability Min="200" Max="249">Reset</Capability>
+  <Capability Min="250" Max="255">Single Unit Sound Control Random</Capability>
+ </Channel>
+ <Mode Name="13 Channel">
+  <Channel Number="0">PAN 1</Channel>
+  <Channel Number="1">PAN 2</Channel>
+  <Channel Number="2">Dimmer</Channel>
+  <Channel Number="3">Strobe</Channel>
+  <Channel Number="4">W1 Dimmer</Channel>
+  <Channel Number="5">B1 Dimmer</Channel>
+  <Channel Number="6">G1 Dimmer</Channel>
+  <Channel Number="7">R1 Dimmer</Channel>
+  <Channel Number="8">W2 Dimmer</Channel>
+  <Channel Number="9">B2 Dimmer</Channel>
+  <Channel Number="10">G2 Dimmer</Channel>
+  <Channel Number="11">R2 Dimmer</Channel>
+  <Channel Number="12">Other</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="2.6" Width="150" Height="280" Depth="120"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Head" PanMax="135" TiltMax="0"/>
+  <Layout Width="2" Height="4"/>
+  <Technical PowerConsumption="45" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
